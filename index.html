@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style-sheets/style.css">
+    <script src="./script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/08ce6d492f.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,400;1,600;1,700&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="#"><img id="logo" src="recources/logo.png" alt="site logo"></a>
+            <nav>
+                <p>Aspiring Web Developer</p>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <div class="intro">
+                <h1>Hi, My Name Is<br>Josh.</h1>
+                <p>Since discovering a glitch in Pokémon Red as a kid that allowed me to duplicate items, I've been fascinated by how games and programs work. 
+                    With a knack for creativity, I channeled my problem-solving skills and curiosity into a career in audio engineering. 
+                    However, after reaching a plateau in that field, I sought a new challenge, and development felt like a natural transition.
+                </p>
+                
+                <div class="buttons">
+                    <a href="./aboutMe.html"><button class="about-me">Read More</button></a>
+                    <a href="./my-work.html"><button class="my-work">My Work</button></a>
+                </div>
+            </div>
+            <div class="skills">
+                <h2>proficient in:</h2>
+                <div class="skills-container">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-python"></i>
+                    <i class="fa-brands fa-c"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-git"></i>
+                </div>
+            </div>
+            <!-- Testimonials ---------------------------------------->
+            <div class="testimonial-1">
+                <div class="profile">
+                    <img id="profile-img" src="recources/profile-1.jpg" />
+                    <div class="name-user">
+                        <strong>Jamilah Louise</strong>
+                        <span>@jamilahlouise</span>
+                    </div>
+                </div>
+                <!-- Comments ---------------------------------------->
+                <div class="client-comment">
+                    <p>"What a guy. Talent in abundance and great jokes. 10/10"</p>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+                
+                <div class="next1"></div>
+            </div>
+            <button id="togglePage1"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="testimonial-2">
+                <div class="profile">
+                    <img id="profile-img" src="recources/profile-2.jpg" />
+                    <div class="name-user">
+                        <strong>Darren Anderson</strong>
+                        <span>@andrson72</span>
+                    </div>
+                </div>
+                <!-- Comments ---------------------------------------->
+                <div class="client-comment">
+                    <p>"If i had to pick someone to be stuck on a desert island with, it would probably be Louis Theroux. But my second choice would definitely be Josh"</p>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <button id="togglePage2"><i class="fa-solid fa-chevron-right"></i></button>
+
+            <!-- Page 3 - Hidden. Toggled by button ---------------------------------------->            
+            <div class="testimonial-3">
+                <div class="profile">
+                    <img id="profile-img" src="recources/profile-3.jpg" />
+                    <div class="name-user">
+                        <strong>Yvonne Robinson</strong>
+                        <span>@definitelynotmymum</span>
+                    </div>
+                </div>
+                <!-- Comments ---------------------------------------->
+                <div class="client-comment">
+                    <p>"Working with Josh was a fantastic experience. His professionalism and quality of work were exceptional. 
+                        He maintained clear communication throughout the project and was committed to delivering a 
+                        website that was both aesthetically pleasing and highly functional."</p>
+                    </div>
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <button id="togglePage3"><i class="fa-solid fa-chevron-left"></i></button>
+
+                <!-- Page 4 - Hidden. Toggled by button ---------------------------------------->
+                <div class="testimonial-4">
+                    <div class="profile">
+                        <img id="profile-img" src="recources/profile-5.jpg" />
+                        <div class="name-user">
+                            <strong>Georgie Brown</strong>
+                            <span>@gmb_xoxo</span>
+                        </div>
+                    </div>
+                    <!-- Comments ---------------------------------------->
+                    <div class="client-comment">
+                        <p>"Which one's Josh again?"</p>
+                        </div>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star" id="empty-star"></i><!-- Empty star -->                                                                                                                                                      
+                            <i class="fas fa-star" id="empty-star"></i><!-- Empty star -->
+                        </div>
+                    </div>
+                    <button id="togglePage4" ><i class="fa-solid fa-chevron-left"></i></button>
+                </div>
+            </div>
+            
+            </main>
+
+                        
+            <footer>
+                <h3></h3>
+                <div class="socials">
+                    <a href="www.linkedin.com/in/
+                    joshua-r-dixon
+                    " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/JoshCodedit" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:joshua.dixoncms@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></i></a>
+                    <a href="tel:+447904899689" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    
+                </div>
+            </footer>
+            
+            
+
+</html>

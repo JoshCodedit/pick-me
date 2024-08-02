@@ -1,0 +1,216 @@
+body {
+  margin: 0px 10%;
+}
+
+.menu-container {
+  display: none;
+}
+
+nav {
+  float: right;
+  margin-top: 40px;
+  margin-right: 40px;
+  font-family: sora;
+  font-weight: bold;
+  font-size: 22px;
+  color: black;
+}
+
+header li {
+  display: inline-block;
+  padding: 8px;
+  justify-content: center;
+  margin: 10px;
+}
+
+nav a {
+  color: black;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.active {
+  color: #8670eb;
+}
+
+nav a:hover {
+  color: #8670eb;
+}
+
+.biography-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sora;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.biography {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background-color: #8770eb2a;
+}
+
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.picture-1 {
+  width: 45%;
+}
+
+#download-icon {
+  font-size: 50px;
+  margin-top: 15px;
+}
+
+
+/* testimonials responsiveness */
+@media only screen and (max-width: 1174px) {
+
+  nav {
+    display: none;
+  }
+
+  .menu-container {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 50%;
+    font-family: poppins;
+  }
+
+  .drop-menu i {
+    text-align: center;
+    font-size: 20px;
+    padding: 1px;
+  }
+
+  .drop-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .drop-menu>li {
+    position: relative;
+  }
+
+  .drop-menu>li>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .drop-menu>li>a>i {
+    margin-left: 5px;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    min-width: 200px;
+  }
+
+  .dropdown>li>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    width: 200px;
+  }
+
+  .dropdown>li:last-child>a {
+    border-bottom: none;
+  }
+
+  .dropdown>li>a:hover,
+  .dropdown>li>a.active {
+    background-color: #8670eb;
+    color: #000;
+  }
+
+  .drop-menu>li:hover>.dropdown {
+    display: block;
+  }
+
+  .biography-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 522px) {
+  .container {
+    justify-items: center;
+  }
+
+  .menu-container {
+    display: flex;
+    top: 120px;
+  }
+}
+
+@media only screen and (max-width:1190px) {
+
+
+  .biography {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:935px) {
+  .biographys {
+    max-width: 300px;
+    overflow-x: hidden;
+  }
+
+  .download-button {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #logo {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
