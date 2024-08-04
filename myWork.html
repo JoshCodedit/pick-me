@@ -135,6 +135,7 @@
         </div>
       </div>
 
+      <!-- Projects displayed on smaller screen dimensions -->
       <div class="small-screen-projects">
         <div class="small-project">
           <a href="https://teaandtoast.netlify.app/" target="_blank"
@@ -148,7 +149,7 @@
         </div>
 
         <div class="small-project">
-          <a href="https://jamcakes.netlify.app/" target="_blank"
+          <a href="https://josh-ecommerce-site.netlify.app/" target="_blank"
             ><img
               id="project-image-2"
               src="./recources/screencapture-josh-ecommerce-site-netlify-app-2024-07-22-10_24_44.png"
@@ -200,6 +201,7 @@
           const siteButton = document.getElementById(`site${project.id}`);
           const gitButton = document.getElementById(`git${project.id}`);
 
+          // Show text and dim image background so text is easily read 
           projectElement.addEventListener("mouseover", function () {
             projectImage.style.filter = "brightness(8%)";
             projectImage.style.transition = "0.5s";
@@ -218,6 +220,8 @@
         });
       });
 
+
+      // Fetch descriptions from txt files
       fetch("./text-files/teaandtoast.txt")
         .then((response) => response.text())
         .then((data) => {

@@ -505,7 +505,7 @@ footer a {
     }
 }
 
-@media only screen and (max-width: 539px) {
+@media only screen and (max-width: 599px) {
     .intro button {
         font-size: 17px;
         width: 150px;
