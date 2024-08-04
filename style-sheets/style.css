@@ -1,4 +1,4 @@
-*{
+* {
     font-family: sora;
 }
 
@@ -106,7 +106,7 @@ nav a:hover {
     transition: font-size 0.9s ease;
 }
 
-.testimonials-header{
+.testimonials-header {
     grid-column: 6 / span 2;
     grid-row: 1 / span 2;
 }
@@ -156,7 +156,7 @@ nav a:hover {
     bottom: 20px;
 }
 
-#empty-star{
+#empty-star {
     color: #8d8c4175;
 }
 
@@ -258,7 +258,6 @@ nav a:hover {
 
 
 footer {
-    /* margin-top: 10%; */
     text-align: center;
     font-size: 18px;
 }
@@ -269,12 +268,12 @@ footer a {
     padding: 20px;
 }
 
-.socials{
+.socials {
     margin-top: 70px;
 }
 
-.socials i{
-   font-size: 30px;
+.socials i {
+    font-size: 30px;
 }
 
 
@@ -442,7 +441,7 @@ footer a {
         margin-bottom: 0;
     }
 
-    .grid-container{
+    .grid-container {
         gap: 0;
     }
 
@@ -469,7 +468,7 @@ footer a {
         font-size: 50px;
     }
 
-    .socials{
+    .socials {
         margin-top: 0px;
     }
 }
@@ -483,7 +482,7 @@ footer a {
         max-width: 932;
     }
 
-    .intro button{
+    .intro button {
         margin-top: 50px;
         margin-bottom: 70px;
     }
@@ -515,13 +514,13 @@ footer a {
 }
 
 @media only screen and (max-width:391px) {
-    .intro{
+    .intro {
         margin-top: 10px;
     }
+
     .intro button {
         font-size: 15px;
         width: 120px;
 
     }
 }
-
